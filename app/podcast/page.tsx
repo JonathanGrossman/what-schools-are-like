@@ -63,7 +63,7 @@ export default function PodcastPage() {
     },
   ];
   return (
-    <main className="pt-16 min-h-screen bg-gradient-to-br from-background via-yellow-50 to-red-50">
+    <main className="pt-16 min-h-screen">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-12">

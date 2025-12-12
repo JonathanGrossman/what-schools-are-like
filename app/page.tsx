@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   return (
-    <main className="pt-16 h-screen bg-gradient-to-br from-background via-yellow-50 to-red-50 overflow-hidden flex flex-col">
-      <div className="relative z-10 flex flex-col items-center justify-center flex-1">
+    <main className="pt-16 h-screen">
+      <div className="relative z-10 flex flex-col items-center justify-center flex-1 py-12">
         <section className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto space-y-8">
             <div className="space-y-2">
