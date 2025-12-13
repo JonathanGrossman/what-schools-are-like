@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "What Schools Are Like These Days - Podcast",
+  title: "What School Is Like These Days - Podcast",
   description:
     "Real talk from the kids who know. Listen to honest conversations about student life, school challenges, and everything in between.",
   generator: "v0.app",

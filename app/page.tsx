@@ -9,7 +9,7 @@ export default function HomePage() {
           <div className="text-center max-w-2xl mx-auto space-y-8">
             <div className="space-y-2">
               <h1 className="text-xl sm:text-6xl lg:text-7xl font-bold text-foreground text-balance leading-tight">
-                What schools are like these days
+                What School Is Like These Days
               </h1>
 
               <p className="text-xl sm:text-2xl text-secondary font-semibold flex items-center justify-center gap-2">
