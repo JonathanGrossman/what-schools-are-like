@@ -1,5 +1,6 @@
 import { Music, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { siteTitle } from "@/lib/constants";
 
 export default function HomePage() {
   return (
@@ -9,7 +10,7 @@ export default function HomePage() {
           <div className="text-center max-w-2xl mx-auto space-y-8">
             <div className="space-y-2">
               <h1 className="text-xl sm:text-6xl lg:text-7xl font-bold text-foreground text-balance leading-tight">
-                What School Is Like These Days
+                {siteTitle}
               </h1>
 
               <p className="text-xl sm:text-2xl text-secondary font-semibold flex items-center justify-center gap-2">

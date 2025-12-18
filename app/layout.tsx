@@ -3,12 +3,13 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "../components/navbar";
 import "./globals.css";
+import { siteTitle } from "@/lib/constants";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "What School Is Like These Days - Podcast",
+  title: siteTitle,
   description:
     "Real talk from the kids who know. Listen to honest conversations about student life, school challenges, and everything in between.",
   generator: "v0.app",
