@@ -4,6 +4,7 @@ import { Music } from "lucide-react";
 
 export default function PodcastPage() {
   const episodes = [
+    { link: "6NGx3b53uIZJgms8XnDdGA?si=rVYBoi9TT_Wg3T-RkDo0OQ" },
     {
       link: "7p2DiQDkMYKtHubdkLdcFm?si=cy2uVq5pQL-ac6VjeLzQSQ",
     },
