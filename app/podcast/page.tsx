@@ -1,5 +1,6 @@
 "use client";
 
+import { PodcastMenu } from "@/components/PodcastMenu";
 import { Music } from "lucide-react";
 
 export default function PodcastPage() {
@@ -63,12 +64,13 @@ export default function PodcastPage() {
       link: "7dsOO8Q6FtYxlyGOxbeCrB?si=wGhMjiX1QWe8-OrbE25S9w",
     },
   ];
+
   return (
     <main className="pt-16 min-h-screen">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-2 mb-4">
+        <div className="w-full flex flex-col items-center justify-center mb-12 gap-4">
+          <div className="flex items-center justify-center gap-2">
             <Music className="w-8 h-8 text-secondary" />
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground">
               Episodes
@@ -77,6 +79,7 @@ export default function PodcastPage() {
           <p className="text-lg text-foreground/70">
             Listen to our latest episodes
           </p>
+          <PodcastMenu />
         </div>
 
         <div className="space-y-8">
