@@ -32,7 +32,7 @@ export default function SuggestionBoxPage() {
         <div className="space-y-8">
           {episodes.map((episode) => {
             return (
-              <div>
+              <div key={episode.link}>
                 <iframe
                   style={{ borderRadius: "12px" }}
                   src={`https://open.spotify.com/embed/episode/${episode.link}`}
