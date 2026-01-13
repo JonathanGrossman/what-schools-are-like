@@ -9,6 +9,7 @@ import { FooterSidebar } from "./FooterSidebar";
 export function AppSidebar() {
   return (
     <Sidebar>
+      {/* Main Sidebar */}
       <HeaderSidebar />
       <SidebarContent className="gap-0">
         <Main />
