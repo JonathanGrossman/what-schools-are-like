@@ -26,7 +26,6 @@ export default function SuggestionBoxPage() {
           <p className="text-lg text-foreground/70">
             Listen to our interview series
           </p>
-          <PodcastMenu />
         </div>
 
         <div className="space-y-8">

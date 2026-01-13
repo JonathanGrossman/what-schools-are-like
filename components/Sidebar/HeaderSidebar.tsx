@@ -3,24 +3,8 @@
 import {
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { iconMapMain, main } from "@/lib/constants";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@radix-ui/react-dropdown-menu";
-import {
-  ChevronDown,
-  ChevronsUpDown,
-  ChevronUp,
-  House,
-  Languages,
-} from "lucide-react";
-import Link from "next/link";
 
 export function HeaderSidebar() {
   return (

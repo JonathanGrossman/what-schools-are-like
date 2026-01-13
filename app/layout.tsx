@@ -9,6 +9,8 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import { Providers } from "./providers";
+import { AuthContextProvider } from "@/context/authContext";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -20,18 +22,18 @@ export const metadata: Metadata = {
   generator: "v0.app",
   icons: {
     icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      // {
+      //   url: "/icon-light-32x32.png",
+      //   media: "(prefers-color-scheme: light)",
+      // },
+      // {
+      //   url: "/icon-dark-32x32.png",
+      //   media: "(prefers-color-scheme: dark)",
+      // },
+      // {
+      //   url: "/icon.svg",
+      //   type: "image/svg+xml",
+      // },
     ],
     apple: "/apple-icon.png",
   },
@@ -45,12 +47,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <SidebarProvider>
-          {/* <Navbar /> */}
-          <AppSidebar />
-          <SidebarTrigger />
-          <SidebarInset>{children}</SidebarInset>
-        </SidebarProvider>
+        <Providers>
+          <AuthContextProvider defaultOpen={false} variant="floating">
+            <SidebarProvider>
+              <AppSidebar />
+              <SidebarTrigger />
+              <SidebarInset>{children}</SidebarInset>
+            </SidebarProvider>
+          </AuthContextProvider>
+        </Providers>
       </body>
     </html>
   );

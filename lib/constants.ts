@@ -5,6 +5,7 @@ export const siteTitle = "What School Is Like These Days";
 export const iconMapMain = {
   Home,
   ShoppingBag,
+  Inbox,
 };
 
 export const main = [
@@ -18,11 +19,15 @@ export const main = [
     url: "/shop",
     icon: "ShoppingBag",
   },
+  {
+    title: "Suggestion Box",
+    url: "/podcast/suggestion-box",
+    icon: "Inbox",
+  },
 ];
 
 export const iconMapPodcasts = {
   Music,
-  Inbox,
   MicVocal,
 };
 export const podcasts = [
@@ -35,10 +40,5 @@ export const podcasts = [
     title: "Interview Series",
     url: "/podcast/interview-series",
     icon: "MicVocal",
-  },
-  {
-    title: "Suggestion Box",
-    url: "/podcast/suggestion-box",
-    icon: "Inbox",
   },
 ];

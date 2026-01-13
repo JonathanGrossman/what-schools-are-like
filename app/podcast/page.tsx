@@ -79,7 +79,6 @@ export default function PodcastPage() {
           <p className="text-lg text-foreground/70">
             Listen to our latest episodes
           </p>
-          <PodcastMenu />
         </div>
 
         <div className="space-y-8">
