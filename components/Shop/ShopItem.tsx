@@ -25,7 +25,7 @@ export default function ShopItem(props: any) {
       >
         <img
           src={`./shop/${file}`}
-          className="bg-card rounded-2xl p-8 border border-border shadow-md hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer h-full"
+          className="bg-card rounded-2xl p-8 border border-border shadow-md hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer"
         />
       </a>
     </div>
