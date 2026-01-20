@@ -42,3 +42,16 @@ export const podcasts = [
     icon: "MicVocal",
   },
 ];
+
+export const listenButtons = [
+  {
+    text: "Spotify",
+    link: "https://open.spotify.com/show/0eeTfxMogjXZL65vn7bzbm",
+    icon: "fa fa-spotify",
+  },
+  {
+    text: "Amazon",
+    link: "https://music.amazon.com/podcasts/def4c065-ec28-445e-a413-74f9dfe8e048/what-schools-are-like-these-days",
+    icon: "fa fa-amazon",
+  },
+];

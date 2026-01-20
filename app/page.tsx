@@ -1,6 +1,6 @@
 import { Music, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { siteTitle } from "@/lib/constants";
+import { listenButtons, siteTitle } from "@/lib/constants";
 
 export default function HomePage() {
   return (
@@ -25,34 +25,24 @@ export default function HomePage() {
             </p>
 
             <div className="pt-8 flex justify-center flex-wrap items-center gap-3">
-              <Button
-                asChild
-                size="lg"
-                className="bg-secondary hover:shadow-xl transition-all duration-300 text-white px-8 py-6 text-lg rounded-full font-semibold"
-              >
-                <a
-                  href="https://open.spotify.com/show/0eeTfxMogjXZL65vn7bzbm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Music className="w-5 h-5 mr-2" />
-                  Listen on Spotify
-                </a>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                className="bg-secondary hover:shadow-xl transition-all duration-300 text-white px-8 py-6 text-lg rounded-full font-semibold"
-              >
-                <a
-                  href="https://music.amazon.com/podcasts/def4c065-ec28-445e-a413-74f9dfe8e048/what-schools-are-like-these-days"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Music className="w-5 h-5 mr-2" />
-                  Listen on Amazon
-                </a>
-              </Button>
+              {listenButtons.map((button) => {
+                return (
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-secondary hover:shadow-xl transition-all duration-300 text-white px-8 py-6 text-lg rounded-full font-semibold"
+                  >
+                    <a
+                      href={button.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className={button.icon} />
+                      Listen on {button.text}
+                    </a>
+                  </Button>
+                );
+              })}
             </div>
           </div>
         </section>
